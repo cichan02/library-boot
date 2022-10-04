@@ -1,0 +1,3 @@
+SELECT * FROM Person;
+
+SELECT * FROM Book;

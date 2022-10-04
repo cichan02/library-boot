@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Main</title>
+</head>
+
+<body>
+	<p>Hello!</p>
+	
+	<div>
+		<a th:href="@{/people}">List of people</a>
+		<br/>
+		<a th:href="@{/books}">List of books</a>
+	</div>
+	
+	<div style="color: red" th:if="${IllegalArgumentException}" >
+		<span th:text="${IllegalArgumentException.getMessage()}">Error message</span>
+	</div>	
+</body>
+</html>
